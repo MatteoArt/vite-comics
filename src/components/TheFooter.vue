@@ -166,6 +166,7 @@ section {
     @include text-white;
     border: 2px solid $color_primary;
     padding: 10px;
+    cursor: pointer;
 }
 .icons {
     @include d-flex;
