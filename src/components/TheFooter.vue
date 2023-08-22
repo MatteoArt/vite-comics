@@ -5,6 +5,43 @@ export default {
         return {
             icons: ["footer-facebook.png","footer-twitter.png",
         "footer-youtube.png","footer-pinterest.png","footer-periscope.png"],
+        DcComicsLinks: [
+        { name: "Dc comics"},
+        { name: "Characters"},
+        { name: "Comics" },
+        { name: "Movies"},
+        { name: "TV"},
+        { name: "Games"},
+        { name: "Videos"},
+        { name: "News"},
+        ],
+      ShopLinks:[
+        { name: "Shop"},
+        { name: "Shop DC"},
+        { name: "Shop DC Collectibles" },
+        ],
+      DCLinks:[
+        { name: "Dc"},
+        { name: "Terms Of Use"},
+        { name: "Privacy policy (New)" },
+        { name: "Ad Choices"},
+        { name: "Advertising"},
+        { name: "Jobs"},
+        { name: "Subscriptions"},
+        { name: "Talent Workshops"},
+        { name: "CPSC Certificates"},
+        { name: "Ratings"},
+        { name: "Shop Help"},
+        { name: "Contact Us"},
+        ],
+      SitesLinks:[
+        { name: "Sites"},
+        { name: "DC"},
+        { name: "MAD Magazine"},
+        { name: "DC Kids"},
+        { name: "DC Universe"},
+        { name: "DC Power Visa"},
+        ],
         }
     },
     methods: {
@@ -22,42 +59,25 @@ export default {
             <div class="container-menu-footer">
                 <div class="container-ul">
                     <ul class="list-footer">
-                        <li>Dc comics</li>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li v-for="dcLink in DcComicsLinks">
+                            {{ dcLink.name }}
+                        </li>
                     </ul>
                     <ul class="list-footer">
-                        <li>Shop</li>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
+                        <li v-for="shop in ShopLinks">
+                            {{ shop.name }}
+                        </li>
                     </ul>
                 </div>
                 <ul class="list-footer">
-                    <li>Dc</li>
-                    <li>Terms Of Use</li>
-                    <li>Privacy policy (New)</li>
-                    <li>Ad Choices</li>
-                    <li>Advertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
+                    <li v-for="dcLink in DCLinks">
+                        {{ dcLink.name }}
+                    </li>
                 </ul>
                 <ul class="list-footer">
-                    <li>Sites</li>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC Kids</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
+                    <li v-for="site in SitesLinks">
+                        {{ site.name }}
+                    </li>
                 </ul>
             </div>
         </section>
