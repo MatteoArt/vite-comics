@@ -65,6 +65,7 @@ export default {
   font-weight: 600;
   margin-top: 50px;
   font-size: 14px;
+  cursor: pointer;
 }
 .btn-big {
   @include pill;
@@ -76,5 +77,6 @@ export default {
   position: absolute;
   left: 175px;
   top: -20.5px;
+  cursor: pointer;
 }
 </style>

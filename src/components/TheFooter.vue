@@ -3,45 +3,45 @@
 export default {
     data() {
         return {
-            icons: ["footer-facebook.png","footer-twitter.png",
-        "footer-youtube.png","footer-pinterest.png","footer-periscope.png"],
-        DcComicsLinks: [
-        { name: "Dc comics"},
-        { name: "Characters"},
-        { name: "Comics" },
-        { name: "Movies"},
-        { name: "TV"},
-        { name: "Games"},
-        { name: "Videos"},
-        { name: "News"},
-        ],
-      ShopLinks:[
-        { name: "Shop"},
-        { name: "Shop DC"},
-        { name: "Shop DC Collectibles" },
-        ],
-      DCLinks:[
-        { name: "Dc"},
-        { name: "Terms Of Use"},
-        { name: "Privacy policy (New)" },
-        { name: "Ad Choices"},
-        { name: "Advertising"},
-        { name: "Jobs"},
-        { name: "Subscriptions"},
-        { name: "Talent Workshops"},
-        { name: "CPSC Certificates"},
-        { name: "Ratings"},
-        { name: "Shop Help"},
-        { name: "Contact Us"},
-        ],
-      SitesLinks:[
-        { name: "Sites"},
-        { name: "DC"},
-        { name: "MAD Magazine"},
-        { name: "DC Kids"},
-        { name: "DC Universe"},
-        { name: "DC Power Visa"},
-        ],
+            icons: ["footer-facebook.png", "footer-twitter.png",
+                "footer-youtube.png", "footer-pinterest.png", "footer-periscope.png"],
+            DcComicsLinks: [
+                { name: "Dc comics" },
+                { name: "Characters" },
+                { name: "Comics" },
+                { name: "Movies" },
+                { name: "TV" },
+                { name: "Games" },
+                { name: "Videos" },
+                { name: "News" },
+            ],
+            ShopLinks: [
+                { name: "Shop" },
+                { name: "Shop DC" },
+                { name: "Shop DC Collectibles" },
+            ],
+            DCLinks: [
+                { name: "Dc" },
+                { name: "Terms Of Use" },
+                { name: "Privacy policy (New)" },
+                { name: "Ad Choices" },
+                { name: "Advertising" },
+                { name: "Jobs" },
+                { name: "Subscriptions" },
+                { name: "Talent Workshops" },
+                { name: "CPSC Certificates" },
+                { name: "Ratings" },
+                { name: "Shop Help" },
+                { name: "Contact Us" },
+            ],
+            SitesLinks: [
+                { name: "Sites" },
+                { name: "DC" },
+                { name: "MAD Magazine" },
+                { name: "DC Kids" },
+                { name: "DC Universe" },
+                { name: "DC Power Visa" },
+            ],
         }
     },
     methods: {
@@ -80,9 +80,7 @@ export default {
                     </li>
                 </ul>
             </div>
-            <div class="img-container">
-                <img src="../assets/dc-logo-bg.png" alt="dc-logo">
-            </div>
+            <img class="bg-logo-img" src="../assets/dc-logo-bg.png" alt="dc-logo">
         </section>
     </div>
     <div id="foot">
@@ -108,35 +106,32 @@ export default {
 
 .wrapper {
     background-image: url("../assets/footer-bg.jpg");
-    height: 380px;
-    overflow: hidden;
 }
 
-.img-container {
-    width: 463px;
+.bg-logo-img {
     position: absolute;
-    top: -80px;
-    bottom: -80px;
+    height: 130%;
     right: 0;
-
-    img {
-        width: 100%;
-    }
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #foot {
     background-color: #303030;
     padding: 20px 0;
 }
+
 #dark-gray-bar {
     background-color: #202020;
     height: 100px;
 }
+
 section {
     @include d-flex;
     @include space-position;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 .foot-container {
@@ -153,6 +148,7 @@ section {
 .container-ul {
     @include d-flex-column;
 }
+
 .list-icon {
     @include my-ul-list;
     gap: 10px;
@@ -162,6 +158,7 @@ section {
         cursor: pointer;
     }
 }
+
 .list-footer {
     list-style-type: none;
     padding: 0;
@@ -179,6 +176,7 @@ section {
         }
     }
 }
+
 .btn {
     @include pill;
     @include text-white;
@@ -186,18 +184,20 @@ section {
     padding: 10px;
     cursor: pointer;
 }
+
 .icons {
     @include d-flex;
     align-items: center;
     gap: 15px;
 }
+
 #follow {
     color: $color_primary;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .img-icon {
-        width: 100%;
-     }
-</style>
+    width: 100%;
+}</style>
