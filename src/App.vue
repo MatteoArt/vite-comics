@@ -2,11 +2,13 @@
 
 import TheHeader from "./components/TheHeader.vue";
 import TheFooter from "./components/TheFooter.vue";
+import TheBlueBar from "./components/TheBlueBar.vue";
 
 export default {
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    TheBlueBar
   }
 }
 
@@ -23,6 +25,7 @@ export default {
         </h2>
       </div>
     </div>
+    <TheBlueBar></TheBlueBar>
   </main>
 
   <TheFooter></TheFooter>

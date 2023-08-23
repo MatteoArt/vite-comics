@@ -81,7 +81,7 @@ export default {
                 </ul>
             </div>
             <div class="img-container">
-                
+                <img src="../assets/dc-logo-bg.png" alt="dc-logo">
             </div>
         </section>
     </div>
@@ -108,10 +108,20 @@ export default {
 
 .wrapper {
     background-image: url("../assets/footer-bg.jpg");
+    height: 380px;
+    overflow: hidden;
 }
 
-section {
-    @include d-flex;
+.img-container {
+    width: 463px;
+    position: absolute;
+    top: -80px;
+    bottom: -80px;
+    right: 0;
+
+    img {
+        width: 100%;
+    }
 }
 
 #foot {
@@ -123,9 +133,10 @@ section {
     height: 100px;
 }
 section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @include d-flex;
     @include space-position;
+    justify-content: space-between;
+    position: relative;
 }
 
 .foot-container {
