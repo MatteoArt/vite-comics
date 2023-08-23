@@ -80,6 +80,9 @@ export default {
                     </li>
                 </ul>
             </div>
+            <div class="img-container">
+                
+            </div>
         </section>
     </div>
     <div id="foot">
@@ -105,6 +108,10 @@ export default {
 
 .wrapper {
     background-image: url("../assets/footer-bg.jpg");
+}
+
+section {
+    @include d-flex;
 }
 
 #foot {
